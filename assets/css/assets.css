@@ -1,0 +1,519 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+}
+
+#main{
+    overflow: hidden;
+}
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+#nav{
+}
+
+#nav>li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative
+}
+
+#nav>li>a{
+    color: white;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 15px 24px;
+}
+
+#nav .subnav{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: none;
+    list-style-type: none;
+    background-color: white;
+    position: absolute;
+}
+
+#nav> li:hover> a,
+#nav .subnav li:hover {
+    color: black;
+    background-color: beige; 
+}
+
+#nav li:hover .subnav{
+    display: block;
+    
+
+}
+
+.subnav a{
+    color: black;
+    
+}
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+#header .menu-icon,
+#header .search-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+#header .search-btn,
+#header .menu-icon{
+    color:white ;
+    font-size: 20px;
+    padding: 0px 24px;
+    line-height: 46px;
+}
+
+
+#header .menu-icon:hover{
+    background-color: #ccc;
+    color: black;
+}
+.search-btn:hover{
+    background-color: red;
+}
+
+#slider{
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46px;
+    background-image: url('/assets/image/img-slider.jpg'); 
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.text-content{
+    position: absolute;
+    padding: 32px 16px;
+    bottom: 0;
+    width: 100%;
+}
+
+#slider .text-content .text-heading{
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+#slider .text-content .text-description{
+    text-align: center;
+    margin: 15px 0;
+    color: white;
+}
+
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin: auto;
+    height: 100%;
+}
+
+.content-section .section-heading{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.content-section .section-sub-heading{
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+    color:rgb(126, 119, 111);
+}
+.content-section .about-text{
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.img-about{
+    padding: 32px 0;
+}
+
+.img-about .img-sub-about1,
+.img-about .img-sub-about2,
+.img-about .img-sub-about3{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    
+}
+
+.img-about .image{
+    width: 154px;
+    height: 154px;
+    text-align: center;
+    border-radius: 7px;
+}
+.img-about .img-name{
+    margin: 15px 0;
+}
+
+.tour-section{
+    background-color: black;
+}
+
+.ticket-list li{
+    background-color: white;
+    list-style-type: none;
+    padding: 8px 16px;
+    border: 1px slategrey solid;
+    
+}
+
+.ticket-list .sold-out{
+    background-color: orangered;
+    padding: 0 8px;
+    margin-left: 16px;
+    color: white;
+}
+
+.ticket-list .quantity{
+    padding: 0 8px;
+    margin-right: 16px;
+    background-color: black;
+    color: white;
+    float: right;
+    border-radius: 15px;
+}
+
+.tour-place-all{
+    padding: 32px 8px;
+    overflow: hidden;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.tour-place-all .tour-place{
+    
+    width: 33.33333%;
+    float: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    
+}
+
+.image-tour{
+    width: 100%;
+    display: block;
+}
+
+.image-tour:hover{
+    opacity: 0.7;
+}
+
+.tour-sub{
+    padding: 0 16px;
+    background-color: white;
+}
+.tour-place-heading{
+    padding: 15px 0;
+    font-weight: 700;
+}
+
+.tour-place-date{
+    margin: 15px 0;
+    color: rgb(126, 119, 111);
+}
+.tour-place-content{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.buy-ticket{
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.buy-ticket:hover{
+    background-color: beige;
+    color: black;
+    
+}
+
+.contact-in{
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-in .contact-add{
+    
+    margin-bottom: 16px;
+    width: 50%;
+    display: inline-block;
+}
+
+.contact-icon{
+    padding: 20px;
+}
+
+.contact-text{
+    /* float: right;    */
+}
+
+.contact-text input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    
+}
+.btn-send{
+    margin: 16px 8px;
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.btn-send:hover{
+    background-color: beige;
+    color: black;
+}
+
+.img-map img{
+    width: 100%;
+    
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.footer-icon{
+    font-size: 30px;
+}
+
+.footer-text:hover,
+.ft-ic:hover{
+    opacity: 0.4;
+}
+
+.footer-text{
+    margin: 15px 0;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modal-container{
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+}
+
+.modal-header{
+    border-radius: 15px 15px 0 0;
+    padding: 32px 16px;
+    text-align: center;
+    color: white;
+    background-color: #009688;
+    position: relative;
+    animation: modalFadeIn ease-in 0.5s;
+}
+
+.header-x{
+    position: absolute;
+    padding: 8px 16px;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.header-x:hover{
+    background-color: #ccc;
+    color: black;
+}
+.header-ticket{
+    margin: 10px 0;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+.modal-body{
+    background-color: white;
+    padding: 0.15px 16px;
+    border-radius: 0 0 15px 15px;
+    animation: modalFadeIn ease-in 0.3s;
+
+}
+.sub-modal{
+    margin: 15px 0;
+}
+
+.sub-modal-text{
+    width: 100%;
+    
+}
+.modal-pay{
+    padding: 16px;
+    margin: 16px 0;
+    width: 100%;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.modal-pay:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.modal-close{
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: rgb(244, 67, 54);
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.modal-close:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.modal-help{
+    float: right;
+    margin: 15px 0;
+}
+.modal-help a{
+    color: rgb(33, 150, 243);
+    
+}
+
+.modal.open{
+    display: flex;
+}
+
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .input-dong1{
+        width: max-content;
+    }
+    .menu-btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    #nav li{
+        display: block;
+    }
+    #nav>li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+       position: initial;
+       display: none;
+       background-color: #333;
+    }
+    .nav-lastchild:active .subnav{
+        display: block;
+    }
+    #nav .subnav a:hover {
+        color: black;
+        background-color: beige; 
+    }
+    #nav .subnav a{
+        color: white;
+    }
+    #nav{
+        background-color: black;
+        height: auto;
+    }
+    #header .search-icon{
+        display: none;
+    }
+    .text-content{
+        display: none;
+    }
+    .image{
+        width: 60%;
+    }
+    .img-about .img-sub-about1,
+    .img-about .img-sub-about2,
+    .img-about .img-sub-about3{
+        float: none;
+        width: 100%;
+    }
+    .img-about .image{
+        width: 60%;
+        height: 60%;
+    }
+    .tour-place-all .tour-place{
+        float: none;
+        width: 100%;
+    }
+    .contact-in{
+        display: block;
+    }
+    .contact-text input,
+    .contact-in .contact-add{
+        width: 100%;
+    }
+    #nav li a{
+        display: block;
+        padding: 0 24px;
+    }
+    #header{
+        overflow: hidden;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-btn{
+        display: none;
+    }
+    
+}
